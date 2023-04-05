@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootView"
+    android:layout_width="1024dp"
+    android:layout_height="556dp"
+    android:background="@drawable/radio_bk"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="200dp"
+        android:layout_height="62dp"
+        android:layout_centerHorizontal="true"
+        android:layout_x="712dp"
+        android:layout_y="170dp"
+        android:gravity="center"
+        android:text="车门开关状态"
+        android:textColor="#FFFFFF"
+        android:textSize="30px"></TextView>
+
+    <TextView
+        android:id="@+id/doorstate"
+        android:layout_width="135dp"
+        android:layout_height="62dp"
+        android:layout_centerHorizontal="true"
+        android:layout_x="749dp"
+        android:layout_y="255dp"
+        android:gravity="center"
+        android:text="未确定"
+        android:textColor="#FFFFFF"
+        android:textSize="30px"></TextView>
+
+    <TextView
+        android:layout_width="135dp"
+        android:layout_height="62dp"
+        android:layout_centerHorizontal="true"
+        android:layout_x="237dp"
+        android:layout_y="473dp"
+        android:gravity="center"
+        android:text="测试次数"
+        android:textColor="#FFFFFF"
+        android:textSize="30px"></TextView>
+
+    <TextView
+        android:id="@+id/testcount"
+        android:layout_width="94dp"
+        android:layout_height="62dp"
+        android:layout_centerHorizontal="true"
+        android:layout_x="378dp"
+        android:layout_y="472dp"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="#FFFFFF"
+        android:textSize="30px"></TextView>
+
+    <TextView
+        android:id="@+id/okcount"
+        android:layout_width="91dp"
+        android:layout_height="62dp"
+        android:layout_centerHorizontal="true"
+        android:layout_x="625dp"
+        android:layout_y="472dp"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="#FFFFFF"
+        android:textSize="30px"></TextView>
+
+    <TextView
+        android:id="@+id/okpersent"
+        android:layout_width="91dp"
+        android:layout_height="62dp"
+        android:layout_centerHorizontal="true"
+        android:layout_x="876dp"
+        android:layout_y="470dp"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="#FFFFFF"
+        android:textSize="30px"></TextView>
+
+    <TextView
+        android:layout_width="135dp"
+        android:layout_height="62dp"
+        android:layout_centerHorizontal="true"
+        android:layout_x="484dp"
+        android:layout_y="472dp"
+        android:gravity="center"
+        android:text="正确次数"
+        android:textColor="#FFFFFF"
+        android:textSize="30px"></TextView>
+
+    <TextView
+        android:layout_width="142dp"
+        android:layout_height="62dp"
+        android:layout_centerHorizontal="true"
+        android:layout_x="723dp"
+        android:layout_y="471dp"
+        android:gravity="center"
+        android:text="正确率"
+        android:textColor="#FFFFFF"
+        android:textSize="30px"></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_x="291dp"
+        android:layout_y="24dp"
+        android:gravity="center"
+        android:text="智能网联大赛演示程序"
+        android:textColor="#FFFFFF"
+        android:textSize="40px"></TextView>
+
+    <Button
+        android:onClick="onRPCTest"
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="62dp"
+        android:layout_x="18dp"
+        android:layout_y="472dp"
+        android:text="RPC通信测试"
+        android:textSize="30px" />
+
+    <Button
+        android:onClick="onStartAIControl"
+        android:id="@+id/button2"
+        android:layout_width="190dp"
+        android:layout_height="62dp"
+        android:layout_x="408dp"
+        android:layout_y="352dp"
+        android:text="启动AI控制"
+        android:textSize="30px" />
+
+    <Button
+        android:onClick="onOpenAirAC"
+        android:id="@+id/button3"
+        android:layout_width="190dp"
+        android:layout_height="62dp"
+        android:layout_x="78dp"
+        android:layout_y="167dp"
+        android:text="开空调"
+        android:textSize="30px" />
+
+    <Button
+        android:onClick="onCloseAirAC"
+        android:id="@+id/button4"
+        android:layout_width="190dp"
+        android:layout_height="62dp"
+        android:layout_x="78dp"
+        android:layout_y="250dp"
+        android:text="关空调"
+        android:textSize="30px" />
+
+</AbsoluteLayout>
